@@ -1,0 +1,22 @@
+_G.ca:Button("Example", function()
+loadstring(game:HttpGet('https://dpaste.com/6CE2F7V28.txt'))() --- So here its going to create a button named in example in "Custom Arts" Section watch tutorial before use !
+  end)
+_G.ca:Button("ART NAME HERE", function()
+print('Generate your art') -- Replace this with your thunder hub generated art via bot-cmds, the loadstring 
+  end)
+_G.ca:Button("ART NAME HERE", function()
+print('Generate your art') -- Replace this with your thunder hub generated art via bot-cmds, the loadstring 
+  end)
+_G.ca:Button("ART NAME HERE", function()
+print('Generate your art') -- Replace this with your thunder hub generated art via bot-cmds, the loadstring 
+  end)
+_G.ca:Button("ART NAME HERE", function()
+print('Generate your art') -- Replace this with your thunder hub generated art via bot-cmds, the loadstring 
+  end)
+_G.ca:Button("ART NAME HERE", function()
+print('Generate your art') -- Replace this with your thunder hub generated art via bot-cmds, the loadstring 
+  end)
+_G.ca:Button("ART NAME HERE", function()
+print('Generate your art') -- Replace this with your thunder hub generated art via bot-cmds, the loadstring 
+  end)
+--You can add more , to do this watch tutorial first---
