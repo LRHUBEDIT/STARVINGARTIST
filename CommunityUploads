@@ -12,6 +12,10 @@ end)
 tab:Button("Made by LeRat", function()
 loadstring(game:HttpGet('https://dpaste.com/6P3XPXGJT.txt'))()
 end)
+tab:Button("jennie by exor", function()
+loadstring(game:HttpGet('https://dpaste.com/82NNF7EJK.txt'))()
+tab:Button("jay bye exor", function()
+loadstring(game:HttpGet('https://dpaste.com/2FFQ8JQ5Y.txt'))()
 tab:Button("ART NAME HERE", function()
 print('lol') --- replace this with thunder hub loadstring
 end)
@@ -30,18 +34,10 @@ end)
 tab:Button("ART NAME HERE", function()
 print('lol') --- replace this with thunder hub loadstring
 end)
-tab:Button("ART NAME HERE", function()
-print('lol') --- replace this with thunder hub loadstring
-end)
-tab:Button("ART NAME HERE", function()
-print('lol') --- replace this with thunder hub loadstring
-end)
-tab:Button("ART NAME HERE", function()
-print('lol') --- replace this with thunder hub loadstring
-end)
-tab:Button("ART NAME HERE", function()
-print('lol') --- replace this with thunder hub loadstring
-end)
+tab:Button("taehyung by exor", function()
+loadstring(game:HttpGet('https://dpaste.com/4YRBUMBUJ.txt'))()
+tab:Button("cha eun woo by exor", function()
+loadstring(game:HttpGet('https://dpaste.com/6P3YJCWPD.txt'))()
 tab:Button("ART NAME HERE", function()
 print('lol') --- replace this with thunder hub loadstring
 end)
