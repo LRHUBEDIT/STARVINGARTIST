@@ -2,7 +2,8 @@
 local tab = _G.ComuTab
 tab:Button("ANIME BY LR", function()
 loadstring(game:HttpGet('https://dpaste.com/34EJQ79YR.txt'))() --- dont change this
-end)
+end) 
+
 ---- PLS DONT CHANGE OTHER SCRIPTS ----
 
 --- MAIN ---
