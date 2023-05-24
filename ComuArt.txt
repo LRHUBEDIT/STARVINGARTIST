@@ -1,0 +1,87 @@
+-- EXAMPLE ---
+local tab = _G.ComuTab
+tab:Button("ANIME BY LR", function()
+loadstring(game:HttpGet('https://dpaste.com/34EJQ79YR.txt'))() --- dont change this
+end)
+---- PLS DONT CHANGE OTHER SCRIPTS ----
+
+--- MAIN ---
+
+
+tab:Button("ART NAME HERE", function()
+print('lol') --- replace this with thunder hub loadstring
+end)
+tab:Button("ART NAME HERE", function()
+print('lol') --- replace this with thunder hub loadstring
+end)
+tab:Button("ART NAME HERE", function()
+print('lol') --- replace this with thunder hub loadstring
+end)
+tab:Button("ART NAME HERE", function()
+print('lol') --- replace this with thunder hub loadstring
+end)
+tab:Button("ART NAME HERE", function()
+print('lol') --- replace this with thunder hub loadstring
+end)
+tab:Button("ART NAME HERE", function()
+print('lol') --- replace this with thunder hub loadstring
+end)
+tab:Button("ART NAME HERE", function()
+print('lol') --- replace this with thunder hub loadstring
+end)
+tab:Button("ART NAME HERE", function()
+print('lol') --- replace this with thunder hub loadstring
+end)
+tab:Button("ART NAME HERE", function()
+print('lol') --- replace this with thunder hub loadstring
+end)
+tab:Button("ART NAME HERE", function()
+print('lol') --- replace this with thunder hub loadstring
+end)
+tab:Button("ART NAME HERE", function()
+print('lol') --- replace this with thunder hub loadstring
+end)
+tab:Button("ART NAME HERE", function()
+print('lol') --- replace this with thunder hub loadstring
+end)
+tab:Button("ART NAME HERE", function()
+print('lol') --- replace this with thunder hub loadstring
+end)
+tab:Button("ART NAME HERE", function()
+print('lol') --- replace this with thunder hub loadstring
+end)
+tab:Button("ART NAME HERE", function()
+print('lol') --- replace this with thunder hub loadstring
+end)
+tab:Button("ART NAME HERE", function()
+print('lol') --- replace this with thunder hub loadstring
+end)
+tab:Button("ART NAME HERE", function()
+print('lol') --- replace this with thunder hub loadstring
+end)
+tab:Button("ART NAME HERE", function()
+print('lol') --- replace this with thunder hub loadstring
+end)
+tab:Button("ART NAME HERE", function()
+print('lol') --- replace this with thunder hub loadstring
+end)
+tab:Button("ART NAME HERE", function()
+print('lol') --- replace this with thunder hub loadstring
+end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
