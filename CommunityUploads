@@ -1,6 +1,6 @@
 local CTab = _G.ComuTab
 _G.ComuTab:Button("Le Rat",function()
-print('hi')
+loadstring(game:HttpGet('https://dpaste.com/6N699KP8M.txt'))()
 end)
 
 
