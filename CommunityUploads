@@ -9,8 +9,8 @@ end)
 --- MAIN ---
 
 
-tab:Button("ART NAME HERE", function()
-print('lol') --- replace this with thunder hub loadstring
+tab:Button("Made by LeRat", function()
+loadstring(game:HttpGet('https://dpaste.com/6P3XPXGJT.txt'))()
 end)
 tab:Button("ART NAME HERE", function()
 print('lol') --- replace this with thunder hub loadstring
