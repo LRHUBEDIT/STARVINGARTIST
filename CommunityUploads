@@ -3,19 +3,19 @@ _G.ComuTab:Button("Le Rat",function()
 loadstring(game:HttpGet('https://dpaste.com/6N699KP8M.txt'))()
 end)
 
-G.ComuTab:Button("Le Rat",function()
+_G.ComuTab:Button("Le Rat",function()
 
 loadstring(game:HttpGet('https://dpaste.com/6N699KP8M.txt'))()
 
 end)
 
-G.ComuTab:Button("Le Rat",function()
+_G.ComuTab:Button("Le Rat",function()
 
 loadstring(game:HttpGet('https://dpaste.com/6N699KP8M.txt'))()
 
 end)
 
-G.ComuTab:Button("Le Rat",function()
+_G.ComuTab:Button("Le Rat",function()
 
 loadstring(game:HttpGet('https://dpaste.com/6N699KP8M.txt'))()
 
