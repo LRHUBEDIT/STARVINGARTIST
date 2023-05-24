@@ -1,31 +1,6 @@
--- EXAMPLE ---
-local tab5 = _G.ComuTab
-tab:Button("ANIME BY LR", function()
-loadstring(game:HttpGet('https://dpaste.com/34EJQ79YR.txt'))() 
-end) 
-
----- PLS DONT CHANGE OTHER SCRIPTS ----
-
---- MAIN ---
-
-
-tab5:Button("Made by LeRat", function()
-loadstring(game:HttpGet('https://dpaste.com/6P3XPXGJT.txt'))()
-end)
-tab5:Button("jennie by exor", function()
-
-loadstring(game:HttpGet('https://dpaste.com/82NNF7EJK.txt'))()
-end)
-tab5:Button("jay bye exor", function()
-
-loadstring(game:HttpGet('https://dpaste.com/2FFQ8JQ5Y.txt'))()
-end)
-
-tab5:Button("ART NAME HERE", function()
-print('lol') --- replace this with thunder hub loadstring
-end)
-tab5:Button("ART NAME HERE", function()
-print('lol') --- replace this with thunder hub loadstring
+local CTab = _G.ComuTab
+_G.ComuTab:Button("Le Rat",function()
+print('hi')
 end)
 
 
