@@ -21,11 +21,11 @@ loadstring(game:HttpGet('https://dpaste.com/6N699KP8M.txt'))()
 
 end)
 
+_G.ComuTab:Button("kpop",function()
 
+loadstring(game:HttpGet('https://dpaste.com/AR8E55QSS.txt'))()
 
-
-
-
+end)
 
 
 
