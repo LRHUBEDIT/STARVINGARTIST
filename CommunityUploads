@@ -1,29 +1,31 @@
 local CTab = _G.ComuTab
-_G.ComuTab:Button("Le Rat",function()
-loadstring(game:HttpGet('https://dpaste.com/6N699KP8M.txt'))()
-end)
+_G.ComuTab:Button("Mbappe",function()
 
-_G.ComuTab:Button("Le Rat",function()
-
-loadstring(game:HttpGet('https://dpaste.com/6N699KP8M.txt'))()
+loadstring(game:HttpGet('https://dpaste.com/GGBLPQZDR.txt'))()
 
 end)
 
-_G.ComuTab:Button("Le Rat",function()
+_G.ComuTab:Button("Mbappe",function()
 
-loadstring(game:HttpGet('https://dpaste.com/6N699KP8M.txt'))()
-
-end)
-
-_G.ComuTab:Button("Le Rat",function()
-
-loadstring(game:HttpGet('https://dpaste.com/6N699KP8M.txt'))()
+loadstring(game:HttpGet('https://dpaste.com/GGBLPQZDR.txt'))()
 
 end)
 
-_G.ComuTab:Button("kpop",function()
+_G.ComuTab:Button("Mbappe",function()
 
-loadstring(game:HttpGet('https://dpaste.com/AR8E55QSS.txt'))()
+loadstring(game:HttpGet('https://dpaste.com/GGBLPQZDR.txt'))()
+
+end)
+
+_G.ComuTab:Button("Mbappe",function()
+
+loadstring(game:HttpGet('https://dpaste.com/GGBLPQZDR.txt'))()
+
+end)
+
+_G.ComuTab:Button("Mbappe",function()
+
+loadstring(game:HttpGet('https://dpaste.com/GGBLPQZDR.txt'))()
 
 end)
 
