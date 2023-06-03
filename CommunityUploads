@@ -17,9 +17,9 @@ loadstring(game:HttpGet("https://dpaste.com/BMD2GSWSL.txt"))();
 
 end)
 
-_G.ComuTab:Button("Mbappe",function()
+_G.ComuTab:Button("Sungjinwoo",function()
 
-loadstring(game:HttpGet('https://dpaste.com/GGBLPQZDR.txt'))()
+loadstring(game:HttpGet("https://dpaste.com/3H2LJYYV5.txt"))();
 
 end)
 
