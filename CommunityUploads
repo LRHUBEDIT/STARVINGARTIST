@@ -11,9 +11,9 @@ loadstring(game:HttpGet('https://dpaste.com/GGBLPQZDR.txt'))()
 
 end)
 
-_G.ComuTab:Button("Mbappe",function()
+_G.ComuTab:Button("DragonEye",function()
 
-loadstring(game:HttpGet('https://dpaste.com/GGBLPQZDR.txt'))()
+loadstring(game:HttpGet("https://dpaste.com/BMD2GSWSL.txt"))();
 
 end)
 
