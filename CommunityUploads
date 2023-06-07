@@ -28,6 +28,99 @@ _G.ComuTab:Button("kpop",function()
 loadstring(game:HttpGet('https://dpaste.com/AR8E55QSS.txt'))()
 
 end)
+_G.ComuTab:Button("NAME HERE",function()
+print("loadstring here")
+end)
+G.ComuTab:Button("NAME HERE",function()
+
+print("loadstring here")
+
+end)
+G.ComuTab:Button("NAME HERE",function()
+
+print("loadstring here")
+
+end)
+G.ComuTab:Button("NAME HERE",function()
+
+print("loadstring here")
+
+end)
+G.ComuTab:Button("NAME HERE",function()
+
+print("loadstring here")
+
+end)
+G.ComuTab:Button("NAME HERE",function()
+
+print("loadstring here")
+
+end)
+G.ComuTab:Button("NAME HERE",function()
+
+print("loadstring here")
+
+end)
+G.ComuTab:Button("NAME HERE",function()
+
+print("loadstring here")
+
+end)
+G.ComuTab:Button("NAME HERE",function()
+
+print("loadstring here")
+
+end)
+G.ComuTab:Button("NAME HERE",function()
+
+print("loadstring here")
+
+end)
+G.ComuTab:Button("NAME HERE",function()
+
+print("loadstring here")
+
+end)
+G.ComuTab:Button("NAME HERE",function()
+
+print("loadstring here")
+
+end)
+G.ComuTab:Button("NAME HERE",function()
+
+print("loadstring here")
+
+end)
+G.ComuTab:Button("NAME HERE",function()
+
+print("loadstring here")
+
+end)
+G.ComuTab:Button("NAME HERE",function()
+
+print("loadstring here")
+
+end)
+G.ComuTab:Button("NAME HERE",function()
+
+print("loadstring here")
+
+end)
+G.ComuTab:Button("NAME HERE",function()
+
+print("loadstring here")
+
+end)
+G.ComuTab:Button("NAME HERE",function()
+
+print("loadstring here")
+
+end)
+G.ComuTab:Button("NAME HERE",function()
+
+print("loadstring here")
+
+end)
 
 
 
