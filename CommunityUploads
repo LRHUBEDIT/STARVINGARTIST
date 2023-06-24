@@ -28,8 +28,8 @@ _G.ComuTab:Button("kpop",function()
 loadstring(game:HttpGet('https://dpaste.com/AR8E55QSS.txt'))()
 
 end)
-_G.ComuTab:Button("NAME HERE",function()
-print("loadstring here")
+_G.ComuTab:Button("Astronaut",function()
+loadstring(game:HttpGet("https://dpaste.com/2DKX752RC.txt"))();
 end)
 G.ComuTab:Button("NAME HERE",function()
 
