@@ -31,9 +31,9 @@ end)
 _G.ComuTab:Button("Astronaut",function()
 loadstring(game:HttpGet("https://dpaste.com/2DKX752RC.txt"))();
 end)
-G.ComuTab:Button("NAME HERE",function()
+G.ComuTab:Button("animegirl2",function()
 
-print("loadstring here")
+loadstring(game:HttpGet("https://dpaste.com/3M84JU5QA.txt"))();
 
 end)
 G.ComuTab:Button("AnimeGirl",function()
