@@ -45,9 +45,9 @@ G.ComuTab:Button("AnimeGirl3",function()
 loadstring(game:HttpGet("https://dpaste.com/7E3YHDFKE.txt"))();
 
 end)
-G.ComuTab:Button("NAME HERE",function()
+G.ComuTab:Button("Animepinkgirl",function()
 
-print("loadstring here")
+loadstring(game:HttpGet("https://dpaste.com/C8WTM9FKW.txt"))();
 
 end)
 G.ComuTab:Button("NAME HERE",function()
