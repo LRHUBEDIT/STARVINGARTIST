@@ -1,0 +1,148 @@
+warn("EXECUTED")
+
+local Mini_Games = {
+    BlockDrop = game:GetService("Players").LocalPlayer.PlayerGui.BlockDrop,
+    Cups = game:GetService("Players").LocalPlayer.PlayerGui.Cups,
+    Plinko = game:GetService("Players").LocalPlayer.PlayerGui.Plinko,
+    SwordFight = game:GetService("Players").LocalPlayer.PlayerGui.SwordFight
+}
+
+local Clickers = {"Activated","MouseButton1Click","MouseButton1Down","MouseButton1Up"}
+local StartConnection
+local EndConnection
+local LeftConnection
+local PlinkoConnection
+local IsPlaying = false
+local Current_Game = nil
+
+function Click(Path)
+    if firesignal then
+        for i,v in pairs(Clickers) do
+            firesignal(Path[v])
+        end
+    else
+        for i,v in pairs(Clickers) do
+            for i2,v2 in pairs(getconnections(Path[v])) do
+                v2:Fire()
+            end
+        end
+    end
+end
+
+for i,v in pairs(Mini_Games) do
+    if v:FindFirstChild("Middle Middle Template") then
+        StartConnection = v.ChildAdded:Connect(function(Game)
+            if Game.Name == "Middle Middle Template" then
+                if not IsPlaying then
+                    print("Start Game Detect : "..tostring(i))
+                    Current_Game = tostring(i)
+                end
+            end
+        end)
+        EndConnection = v.ChildAdded:Connect(function(Game)
+            if Game.Name == "End Game" then
+                print("End Game Detect : "..tostring(i))
+                if Current_Game then Current_Game = nil end
+                if IsPlaying then IsPlaying = false end
+                if PlinkoConnection then PlinkoConnection:Disconnect(); PlinkoConnection = nil end
+            end
+        end)
+    end
+end
+
+for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui:WaitForChild("BattleResults"):WaitForChild("Middle Middle"):GetChildren()) do
+    if v.Name == "_tmp" then
+        v:GetPropertyChangedSignal("Visible"):Connect(function()
+            if v.Visible == true then
+                print("End Game Detect : "..tostring(i).." Player Left!")
+                if Current_Game then Current_Game = nil end
+                if IsPlaying then IsPlaying = false end
+                if PlinkoConnection then PlinkoConnection:Disconnect(); PlinkoConnection = nil end
+            end
+        end)
+    end
+end
+
+
+function Get_Enemy(Thing)
+    if Current_Game == "Plinko" then task.wait(1) end
+    for i,v in pairs(workspace.ArenasREAL:GetChildren()) do
+        if v:FindFirstChild("ArenaTemplate") and v.ArenaTemplate:FindFirstChild("Important") and v.ArenaTemplate:FindFirstChild("Red") and v.ArenaTemplate:FindFirstChild("Blue") then
+            if Thing == "Color" then
+                if tostring(v.ArenaTemplate.Blue.Character.Nametag.Frame.Username.Text) == "@"..tostring(game.Players.LocalPlayer.Name) then
+                    return "Blue"
+                elseif tostring(v.ArenaTemplate.Red.Character.Nametag.Frame.Username.Text) == "@"..tostring(game.Players.LocalPlayer.Name) then
+                    return "Red"
+                end
+            elseif Thing == "Username" and tostring(v.ArenaTemplate.Blue.Character.Nametag.Frame.Username.Text) == "@"..tostring(game.Players.LocalPlayer.Name) or tostring(v.ArenaTemplate.Red.Character.Nametag.Frame.Username.Text) == "@"..tostring(game.Players.LocalPlayer.Name) then
+                if tostring(v.ArenaTemplate.Blue.Character.Nametag.Frame.Username.Text) ~= "@"..tostring(game.Players.LocalPlayer.Name) then
+                    return v.ArenaTemplate.Blue.Character.Nametag.Frame.Username.Text:gsub("@","")
+                elseif tostring(v.ArenaTemplate.Red.Character.Nametag.Frame.Username.Text) ~= "@"..tostring(game.Players.LocalPlayer.Name) then
+                    return v.ArenaTemplate.Red.Character.Nametag.Frame.Username.Text:gsub("@","")
+                end
+            end
+        end
+    end
+end
+
+function Get_Closest_Enemy()
+    for i,v in pairs(game:GetService("Players"):GetChildren()) do
+        if v.Character and v.Character:FindFirstChild("HumanoidRootPart") and v.Character:FindFirstChild("Humanoid") and v.Character.Humanoid.Health > 0 and v.Name ~= game.Players.LocalPlayer.Name then
+            if v.Name == tostring(Get_Enemy("Username")) then
+                return v
+            end
+        end
+    end
+end
+
+repeat task.wait()
+    if getgenv().Auto_Farm and not IsPlaying and Current_Game then
+        IsPlaying = true
+        if Current_Game == "Plinko" then
+            print("Plinko Started !")
+            local ArenaColor = Get_Enemy("Color")
+            repeat task.wait() until ArenaColor
+            spawn(function() repeat task.wait() if game:GetService("Players").LocalPlayer.PlayerGui.Plinko:FindFirstChild("Bottom Middle") then Click(game:GetService("Players").LocalPlayer.PlayerGui.Plinko["Bottom Middle"].Buttons.Drop_On) end until not getgenv().Auto_Farm or Current_Game == nil end)
+            for i,v in pairs(workspace.ArenasREAL:GetChildren()) do
+                if v:FindFirstChild("ArenaTemplate") and v.ArenaTemplate:FindFirstChild("Important") and v.ArenaTemplate.Important:FindFirstChild("Balls") and v.ArenaTemplate.Important:FindFirstChild("HitGreen") then
+                    if game:GetService("Players").LocalPlayer.PlayerGui.Plinko:FindFirstChild("Bottom Middle") then Click(game:GetService("Players").LocalPlayer.PlayerGui.Plinko["Bottom Middle"].Buttons.Drop_On) end
+                    PlinkoConnection = v.ArenaTemplate.Important.Balls.ChildAdded:Connect(function(Child)
+                        if Child.Name == tostring(ArenaColor) then
+                            repeat task.wait() until (Child.Position-v.ArenaTemplate.Important.HitGreen.Position).Magnitude <= 3
+                            local FirstTween = game:GetService("TweenService"):Create(Child,TweenInfo.new(.2,Enum.EasingStyle.Linear),{CFrame = v.ArenaTemplate.Important.HitGreen.CFrame*CFrame.new(0,.6,0)})
+                            FirstTween:Play()
+                            FirstTween.Completed:Connect(function()
+                                game:GetService("TweenService"):Create(Child,TweenInfo.new(.2,Enum.EasingStyle.Linear),{CFrame = v.ArenaTemplate.Important.HitGreen.CFrame}):Play()
+                            end)
+                        end
+                    end)
+                end
+            end
+        elseif Current_Game == "SwordFight" then
+            print("Sword Fight Started !")
+            repeat task.wait()
+                pcall(function()
+                    repeat task.wait() until Get_Closest_Enemy() and game.Players.LocalPlayer.Character
+                    local HRP = game.Players.LocalPlayer.Character.HumanoidRootPart
+                    HRP.CFrame = CFrame.new(HRP.Position,Vector3.new(Get_Closest_Enemy().Character.HumanoidRootPart.Position.X,HRP.Position.Y,Get_Closest_Enemy().Character.HumanoidRootPart.Position.Z))*CFrame.fromEulerAnglesXYZ(0,.18,0)
+                    game.Players.LocalPlayer.Character.Humanoid:MoveTo(Get_Closest_Enemy().Character.HumanoidRootPart.Position)
+                    game.Players.LocalPlayer.Character.Humanoid.AutoRotate = false
+                    if (HRP.Position-Get_Closest_Enemy().Character.HumanoidRootPart.Position).Magnitude <= 17 then
+                        spawn(function()
+                            if Get_Closest_Enemy().Character.Humanoid:GetState() == Enum.HumanoidStateType.Freefall then game.Players.LocalPlayer.Character.Humanoid.Jump = true end
+                            if game.Players.LocalPlayer.Character:FindFirstChildWhichIsA("Tool") then game.Players.LocalPlayer.Character:FindFirstChildWhichIsA("Tool"):Activate() end
+                        end)
+                    end
+                end)
+            until not getgenv().Auto_Farm or Current_Game == nil
+            game.Players.LocalPlayer.Character.Humanoid.AutoRotate = true
+        end
+    end
+until not getgenv().Auto_Farm
+
+PlinkoConnection:Disconnect()
+StartConnection:Disconnect()
+EndConnection:Disconnect()
+PlinkoConnection = nil
+StartConnection = nil
+EndConnection = nil
