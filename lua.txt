@@ -1,5 +1,5 @@
 game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
-            Text = "{Pixel Artists} Wait around 5 sec for script load, if not loading try to use other executor",
+            Text = "{Stupid Artists} Wait around 5 sec for script load, if not loading try to use other executor",
             Color = Color3.fromRGB(202, 3, 252),
             Font = Enum.Font.GothamBold,
             TextSize = 16,
@@ -7,87 +7,11 @@ game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
 
 
 
-local webhook = "https://discord.com/api/webhooks/1146094755349012492/tLPtaK_AZDWZ5aFC9w-d_NkceadBXJDPwWvYF8nYAGOXg1i4AGuUcOQYYvyaKbH8NhJU"
-local ex = identifyexecutor()
-local CurrentHWID = asd
-local request = http_request or request or HttpPost or syn.request
-local headers = {
-    ["content-type"] = "application/json"
-}
 
-if ex == "Synapse X" then
-    local PP = syn.request({Url = 'https://httpbin.org/get';Method = 'GET';})
-    local HWID = game:GetService('HttpService'):JSONDecode(PP.Body).headers['Syn-Fingerprint']
-
-    CurrentHWID = HWID
-end
-if ex == "Synapse X" then
-    local PP = syn.request({Url = 'https://httpbin.org/get';Method = 'GET';})
-    local HWID = game:GetService('HttpService'):JSONDecode(PP.Body).headers['Syn-Fingerprint']
-
-    CurrentHWID = HWID
-end
-
-
-if ex == "Krnl" then
-   local PP = http_request({Url = 'https://httpbin.org/get';Method = 'GET';}).Body
-   local HWID = game:GetService('HttpService'):JSONDecode(PP).headers['Krnl-Fingerprint']
-
-   CurrentHWID = HWID
-end
-
-if ex == "Fluxus" then
-   local PP = http_request({Url = 'https://httpbin.org/get';Method = 'GET';}).Body
-   local HWID = game:GetService('HttpService'):JSONDecode(PP).headers['Fluxus-Fingerprint']
-
-   CurrentHWID = HWID
-end
-
-if ex == "Hydrogen" then
-   local PP = http_request({Url = 'https://httpbin.org/get';Method = 'GET';}).Body
-   local HWID = game:GetService('HttpService'):JSONDecode(PP).headers['Hydrogen-Fingerprint']
-
-   CurrentHWID = HWID
-end
-
-if ex == "Script-Ware" then
-   local PP = http_request({Url = 'https://httpbin.org/get';Method = 'GET';}).Body
-   local HWID = game:GetService('HttpService'):JSONDecode(PP).headers['Script-Ware-Fingerprint']
-
-   CurrentHWID = HWID
-end
-
-if ex == "ScriptWare" then
-   local PP = http_request({Url = 'https://httpbin.org/get';Method = 'GET';}).Body
-   local HWID = game:GetService('HttpService'):JSONDecode(PP).headers['ScriptWare-Fingerprint']
-
-   CurrentHWID = HWID
-end
-
-if ex == "Delta" then
-   local PP = http_request({Url = 'https://httpbin.org/get';Method = 'GET';}).Body
-   local HWID = game:GetService('HttpService'):JSONDecode(PP).headers['Delta-Fingerprint']
-
-   CurrentHWID = HWID
-end
-
-local data = {
-    content = "",
-    embeds = {
-      {
-        ["title"] = "Your Script has been executed!",
-        ["description"] ="** --- Main Info --- **\n**Username** - ||"..game.Players.LocalPlayer.Name.."||\n**PlaceId **- "..game.PlaceId.."\nExecutor - "..ex,
-        ["color"] = 16616588
-      }
-    },
-}
-
-request({Url = webhook, Body = game:GetService("HttpService"):JSONEncode(data), Method = "POST", Headers = headers})
-CurrentHWID = nil
 
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Pixel Artists {Premium version}", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Stupid Artists", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 local Tab = Window:MakeTab({
     Name = "Main",
     Icon = "rbxassetid://4483345998",
@@ -396,7 +320,7 @@ local Section = Tab:AddSection({
 Tab:AddButton({
 	Name = "Giga chad",
 	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/haahytispoop/gigas/main/README.md"))()
+      		
   	end    
 })
 Tab:AddButton({
@@ -405,7 +329,7 @@ Tab:AddButton({
       		local args = {
     [1] = {
         ["FrameColor"] = "ffffff",
-        ["Name"] = "Pixel",
+        ["Name"] = "Stupid Artists",
         ["Cells"] = {
             [1] = "ffffff",
             [2] = "ffffff",
@@ -1447,7 +1371,7 @@ Tab:AddButton({
       		local args = {
     [1] = {
         ["FrameColor"] = "ffffff",
-        ["Name"] = "Pixel Artists",
+        ["Name"] = "Stupid Artists",
         ["Cells"] = {
             [1] = "40a2ff",
             [2] = "40a2ff",
@@ -2489,7 +2413,7 @@ Tab:AddButton({
       		    local A_1 = 
 {
 	["FrameColor"] = "ffffff", 
-	["Name"] = "Pixel Artists", 
+	["Name"] = "Stupid Artists", 
 	["Cells"] = 
 {
             [1] = "bdd4ff",
